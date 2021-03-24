@@ -17,7 +17,7 @@ if (isset($_POST['send_message_btn'])) {
   	<p>".$msg."</p>
   </body>
   </html>";
-  if (mail($email, $subject, $message, $headers)) {
+  if (mail('arbi.chikh@wecode.land', $subject, $message, $headers)) {
    echo "Email sent";
   }else{
    echo "Failed to send email. Please try again later";
